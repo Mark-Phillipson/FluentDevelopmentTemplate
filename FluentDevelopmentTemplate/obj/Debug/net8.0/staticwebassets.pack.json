@@ -1,0 +1,217 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\bootstrap\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\images\\hoodie.jpeg",
+      "PackagePath": "staticwebassets\\images\\hoodie.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MPhil\\source\\repos\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\FluentDevelopmentTemplate\\wwwroot\\js\\theme.js",
+      "PackagePath": "staticwebassets\\js\\theme.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FluentDevelopmentTemplate.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FluentDevelopmentTemplate.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FluentDevelopmentTemplate.props",
+      "PackagePath": "build\\FluentDevelopmentTemplate.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FluentDevelopmentTemplate.props",
+      "PackagePath": "buildMultiTargeting\\FluentDevelopmentTemplate.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FluentDevelopmentTemplate.props",
+      "PackagePath": "buildTransitive\\FluentDevelopmentTemplate.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

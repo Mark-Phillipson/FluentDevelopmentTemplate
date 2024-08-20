@@ -1,0 +1,53 @@
+@page "/employee/{Id:int?}"
+@rendermode InteractiveServer
+<div style="min-width:40vw">
+    <h1>@Title</h1>
+    <EditForm Model="@EmployeeDTO" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        @*<ValidationSummary />*@
+        @if (EmployeeDTO.Id > 0)
+        {
+            <span class="text-info m-1">@EmployeeDTO.Id</span>
+        }
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label @ref="FirstInput" for="Name">Name:</label>
+                    <i class="text-danger">*</i>
+                    <InputText id="Name" class="form-control" @bind-Value="@EmployeeDTO.Name" placeholder="Enter Name">
+                    </InputText>
+                    <ValidationMessage For="@(() => EmployeeDTO.Name)" />
+                </div>
+                <div class="form-group">
+                    <label for="Department">Department:</label>
+
+                    <InputText id="Department" class="form-control" @bind-Value="@EmployeeDTO.Department"
+                        placeholder="Enter Department"></InputText>
+                    <ValidationMessage For="@(() => EmployeeDTO.Department)" />
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+
+                    <InputText id="Email" class="form-control" @bind-Value="@EmployeeDTO.Email"
+                        placeholder="Enter Email"></InputText>
+                    <ValidationMessage For="@(() => EmployeeDTO.Email)" />
+                </div>
+                <div class="form-group">
+                    <label for="PhotoPath">Photo Path: </label>
+                    <InputTextArea rows="2" id="PhotoPath" class="form-control" @bind-Value="@EmployeeDTO.PhotoPath"
+                        placeholder="Enter Photo Path"></InputTextArea>
+                    <ValidationMessage For="@(() => EmployeeDTO.PhotoPath)" />
+                </div>
+            </div>
+            <div class="col-12">
+                @* Move here for the next display column if required *@
+            </div>
+        </div>
+        <hr>
+        <div style="float:right">
+            <button type='button' accesskey="c" class="btn btn-lg btn-outline-primary"
+                @onclick="@CloseAsync"><u>C</u>ancel</button>
+            <button @TaskRunning accesskey="s" type="submit" class="btn btn-lg btn-primary"><u>S</u>ave Record</button>
+        </div>
+    </EditForm>
+</div>

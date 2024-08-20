@@ -1,0 +1,35 @@
+@page "/customer/{Id:int?}"
+@rendermode InteractiveServer
+<div style="min-width:80vw">
+    <h1>@Title</h1>
+    <EditForm Model="@CustomerDTO" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        @*<ValidationSummary />*@
+        @if (CustomerDTO.Id > 0)
+        {
+            <span class="text-info m-1">@CustomerDTO.Id</span>
+        }
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <FluentTextField Autofocus Required placeholder="Enter Name" id="Name" name="Name" accesskey="n"
+                        @bind-Value=CustomerDTO.Name Label="Name:"></FluentTextField>
+                    <ValidationMessage For="@(() => CustomerDTO.Name)" />
+                </div>
+            </div>
+            <div class="col-12">
+                @* Move here for the next display column if required *@
+            </div>
+        </div>
+        <hr>
+        <div style="float:right">
+            <FluentButton Appearance="Appearance.Outline" onclick="@(() => CloseAsync())">
+                Cancel
+            </FluentButton>
+            <FluentButton Appearance="Appearance.Outline" Type="ButtonType.Submit">
+                Save Record
+            </FluentButton>
+
+        </div>
+    </EditForm>
+</div>

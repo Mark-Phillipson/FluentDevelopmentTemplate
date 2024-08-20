@@ -1,0 +1,165 @@
+@page "/customers"
+
+@rendermode InteractiveServer // Required if interactive mode is not Global
+
+
+
+<div class="row">
+<div class="col-md-12">
+        @if (ApplicationState!= null &&
+    !string.IsNullOrWhiteSpace(ApplicationState.Message))
+    {
+    <div class="alert alert-@ApplicationState.MessageType alertdismissible fade show"
+        role="alert">
+        <strong>Note!</strong>
+        @ApplicationState.Message
+        @DateTime.Now.ToShortTimeString()
+        <button type="button" class="btn-close"
+            @onclick="@(() => HideMessage())"
+            aria-label="Close"></button>
+    </div>
+    }
+    </div>
+<div class="col-md-3">
+<h5 class="m-1">@Title of @totalRows Page: @pageNumber</h5>
+</div>
+@if (_serverPaging) {
+<div class="col-md-4">
+    <button title="Go to 1st page" type="button"
+        class="btn btn-sm btn-outline-secondary mx-1"
+        @onclick="@(()  => PageDown(true))">
+        <i class="bi bi-skip-backward-fill"></i>
+    </button>
+    <button title="Go to previous page" type="button"
+        class="btn btn-sm btn-outline-secondary mx-1"
+        @onclick="(()  => PageDown(false))">
+        <i class="bi bi-caret-left-fill"></i>
+    </button>
+    <button title="Go to next page" type="button"
+        class="btn btn-sm btn-outline-secondary mx-1"
+        @onclick="(() => PageUp(false)) ">
+        <i class="bi bi-caret-right-fill"></i>
+    </button>
+    <button title="Go to last page" type="button"
+        class="btn btn-sm btn-outline-secondary mx-1"
+        @onclick="(()  => PageUp(true))">
+        <i class="bi bi-skip-forward-fill"></i>
+    </button>
+</div>
+}
+            @if (_serverPaging) {
+            <div class="col-md-4">
+<FluentTextField  placeholder="Filter by Name (Alt+I)" id="SearchInput" name="SearchTerm" accesskey="i" style='float:right'  @bind-Value=SearchTerm Label="Search"></FluentTextField>
+
+            </div>
+            } else {
+                <div class="col-md-3">
+                    <FluentTextField placeholder="Filter by Name (Alt+I)" id="ClientSearchInput" name="SearchTerm" accesskey="i" @bind-Value=ClientSearchTerm Label="Filter"></FluentTextField>
+                </div>
+            }
+    </div>
+    @if (FilteredCustomerDTO == null && _loadFailed == true)
+        {
+        <h2 class="text-danger">The data failed to load
+            please try again in a little while..</h2>
+        <button class="btn btn-danger" type="button"
+        @onclick="@( () => LoadData() )">Reload</button>
+        <h6 class="text-danger">@ExceptionMessage</h6>
+    }
+    else if (FilteredCustomerDTO == null)
+            {
+            <div style="display:normal;margin:auto"
+                class="loader"></div>
+            }
+    else if (FilteredCustomerDTO.Count ==
+        0)
+        {
+        <p>No Customer match the
+                criteria</p>
+<FluentButton onclick="AddNewCustomer" BackgroundColor="var(--highlight-bg)" Color="var(--primary)">Add Record</FluentButton>
+        @* <button @onclick="AddNewCustomer"
+            class="btn btn-outline-primary  btn-lg">Add
+            Record <i
+                class="bi bi-plus-square"></i></button> *@
+        }
+    else
+    {
+    <table 
+        style="width:100%;font-size:small;padding:2px ;margin:2px"  class='table-bordered'  >
+        <thead>
+            <tr>
+                                                                <th>
+                                Id
+                            </th>
+                                                                        <th>
+                            <FluentButton @onclick="@(() => SortCustomer("Name"))" Appearance="Appearance.Outline">
+<i class="bi bi-sort-alpha-up"></i>
+                                 </FluentButton>
+                            <FluentButton @onclick="@(() => SortCustomer("Name Desc"))" Appearance="Appearance.Outline">
+<i class="bi bi-sort-alpha-up-alt"></i>
+                                 </FluentButton>
+                            Name
+                        </th>
+                                                    <th class="btn-group border border-1" style='width:100%'>
+<FluentButton style='width:100%'  Appearance="Appearance.Accent" onclick="AddNewCustomer" >Create Record <i class="bi bi-plus-square"></i></FluentButton>
+                            </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var
+                    customer in
+                        FilteredCustomerDTO)
+                            {
+                            <tr>
+                                                                    <td style="cursor:pointer" @onclick="@(() => EditCustomer(customer.Id))">
+    <button class="btn btn-sm btn-link">
+        @customer.Id
+    </button>
+</td>
+                                        <td>
+        @customer.Name
+    </td>
+            <td class="btn-group border border-1" style='width:100%'>
+                <FluentButton style="width:100%" Appearance="Appearance.Outline" onclick="@(() => EditCustomer(customer.Id))" >
+                    Edit Record <i class="bi bi-pencil-square"></i>
+                </FluentButton>
+                <FluentButton style='width:100%'  Appearance="Appearance.Lightweight" onclick="@(() => DeleteCustomer(customer.Id))" >
+                    Delete Record <i class="bi bi-trash"></i>
+                </FluentButton>
+        </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+@if (ShowEdit)
+{
+<dialog open="true" style="position:absolute;left: 0px;top: 200px;z-index: 900" >
+    <FluentCard>
+    <button class="btn btn-outline-secondary m-2" style="float:right" type="submit"
+        @onclick="@( ( ) => ToggleModal(  ) )">x
+    </button>
+    <div>
+        <CustomerAddEdit Title="@EditTitle" Id="@CustomerId" CloseModal="CloseModalAsync" ParentId="@ParentId" />
+    </div>
+</FluentCard>
+</dialog>
+}
+@if (ShowDeleteConfirm)
+{
+<dialog open="true" style="position:absolute;left: 0px;top: 200px;z-index: 900">
+    <FluentCard>
+    <button class="btn btn-outline-secondary m-2" style="float:right" type="submit"
+        @onclick="@( ( ) => ToggleShowDeleteConfirm(  ) )">x
+    </button>
+    <FluentDevelopmentTemplate.Components.BlazoredModalConfirmDialogMVC
+        Confirm="@CloseConfirmDeletion"
+        ButtonColour="danger"
+        Icon="bi bi-trash"
+        Message="Please confirm that you wish to delete a record."
+        Title="Deletion Confirmation Customer Table" />
+    <form method="dialog">
+    </form>
+</FluentCard>
+</dialog>
+}
